@@ -50,7 +50,7 @@ async function main() {
       code = args[0].slice(7); 
       date = args[1].slice(7); 
     } else {
-      throw new Error('Usage: node index.js --code=USD --date=2022-10-08');
+      throw new Error('Usage: node currency_rates --code=USD --date=2022-10-08');
     }
 
     const currencyData = await getCurrencyRates(code, date);
